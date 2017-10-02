@@ -52,7 +52,7 @@ Prerequisites:
 Final step:
   run newsRept.py as follows:
 
-  $ python newsRept.py
+  $ python3 newsRept.py
 
 output:
 
