@@ -30,7 +30,12 @@ Prerequisites:
 
 
 --- database ---
-  Get a copy of the database by running:
+  Get a copy of the database:
+  
+  download data here:
+  https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+  
+  run this command (psql -d news -f newsdata.sql) as follows:
   vagrant@vagrant:/vagrant$ psql -d news -f newsdata.sql
 
 
