@@ -54,10 +54,10 @@ def get_perc_bad():
                             b.statCount as badNum,
                            (a.statCount + b.statCount) as TotalNum
                       FROM vw_date_statCount a join vw_date_statCount b
-                       on a.dateVal = b.dateVal
-		       and a.status = '200 OK' 
-                       and b.status = '404 NOT FOUND') as percQ)
-                       as summQ WHERE prcVal > 1.0;""")
+                      on a.dateVal = b.dateVal
+                      and a.status = '200 OK'
+                      and b.status = '404 NOT FOUND') as percQ)
+                      as summQ WHERE prcVal > 1.0;""")
     c.execute(query)
     errors = c.fetchall()
     db.close()
