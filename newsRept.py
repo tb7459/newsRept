@@ -10,22 +10,22 @@ articles = get_popular_articles()
 authors = get_popular_authors()
 errors = get_perc_bad()
 
-print (" ")
-print ("Article data: ")
+print(" ")
+print("Article data: ")
 
 for article in articles:
-    print ("  \"", article[0], "\" -- ", article[1], " views")
+    print("  \"", article[0], "\" -- ", article[1], " views")
 
-print (" ")
-print ("Author data: ")
+print(" ")
+print("Author data: ")
 
 for author in authors:
-    print ("   ", author[0], " -- ", author[1], " views")
+    print("   ", author[0], " -- ", author[1], " views")
 
-print (" ")
-print ("Error data: ")
+print(" ")
+print("Error data: ")
 
 for error in errors:
-    print ("    ", error[0], " -- ", error[1], " % errors")
+    print("    ", error[0], " -- ", error[1], " % errors")
 
-print ("  ")
+print("  ")
