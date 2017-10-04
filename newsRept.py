@@ -6,26 +6,26 @@
 
 from newsReptdb import get_popular_articles, get_popular_authors, get_perc_bad
 
-articles = get_popular_articles()
-authors = get_popular_authors()
-errors = get_perc_bad()
+if __name__ == "__main__":
+    articles = get_popular_articles()
+    authors = get_popular_authors()
+    errors = get_perc_bad()
 
-print(" ")
-print("Article data: ")
+    print(" ")
+    print("Article data: ")
 
-for article in articles:
-    print("  \"", article[0], "\" -- ", article[1], " views")
+    for(article, views) in articles:
+        print("    {} - {} views".format(article, views))
+    print("-" * 70)
+    print(" ")
+    print("Author data: ")
 
-print(" ")
-print("Author data: ")
+    for(author, views) in authors:
+        print("    {} - {} views".format(author, views))
+    print("-" * 70)
+    print(" ")
+    print("Error data: ")
 
-for author in authors:
-    print("   ", author[0], " -- ", author[1], " views")
-
-print(" ")
-print("Error data: ")
-
-for error in errors:
-    print("    ", error[0], " -- ", error[1], " % errors")
-
-print("  ")
+    for(date, erPerc) in errors:
+        print("    {} - {}%".format(date, erPerc))
+    print("  ")
